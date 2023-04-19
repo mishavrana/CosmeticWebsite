@@ -57,6 +57,7 @@ main {
     width: 100%;
 }
 
+/* Recomended satrts */
 .recomended { 
     padding: 100px 0px 100px 0px;
 }
@@ -81,7 +82,7 @@ main {
     text-decoration: none;
     color: #000;
 }
-
+/* Recomended ends */
 
 /* Topical starts*/
 
@@ -257,3 +258,127 @@ footer {
 }
 
 /* Footer ends*/
+
+@media  screen and (max-width: 600px) {
+    p { 
+        font-size: 10px;
+    }
+    h1 { 
+        font-size: 20px;
+    }
+    header { 
+        padding: 5px 5px;
+    }
+    .nav_links { 
+        display: none;
+    }
+
+    main { 
+        padding: 5px 5px;
+    }
+
+    .recomended { 
+        padding: 30px 0px;
+    }
+    .recomended_products_header { 
+        padding: 0px 5px 30px 5px;
+    }
+    
+    .recomended_products p { 
+        font-size: 10px;
+    }
+    .recomended_products a{ 
+        font-size: 10px;
+    }
+    
+    .recomended_products { 
+        display: flex;
+        flex-flow:wrap;
+    }
+
+    .recomended_products div { 
+        padding: 5px 0px 5px 0px;
+        object-fit:fill;
+        width: calc(100% / 3);
+    }
+    
+    .recomended_products div img {
+        max-width: 95%; 
+    }
+
+    .topical_products_header { 
+        padding: 0px 0px 30px 0px;
+    }
+
+    .topical { 
+        display: flex;
+        flex-flow:wrap;
+    }
+    .topical img { 
+        width: 100%;
+    }
+    .item-1 { 
+        display: none;
+    }
+    .topical .item-2  .item-2_btn {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        font-size: 10px;
+    }
+    
+    .topical .item-3  .item-3_btn {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        font-size: 10px;
+    }
+
+    .reviews_header { 
+        padding: 30px 5px 30px 5px;
+    }
+    .reviews img { 
+        width: 100%;
+    }
+
+    .footer img { 
+        width: 100%;
+        padding: 0px 5px;
+    }
+
+    footer { 
+        padding: 5px 0px;
+        overflow: hidden;
+    }
+    
+    .footer {
+        position:relative;
+        width: 100%;
+    }
+    
+    .footer h1 { 
+        position: absolute;
+        top: 5%;
+        padding: 0px 30px;
+    }
+    
+    
+    .form { 
+        display: flex;
+        align-items: center;
+        padding: 0px 5px 0px 30px;
+    }
+    
+    .form input {  
+        width: 200px;
+        height: 25px;
+        font-size: 12px;
+    }
+    
+    .form button {
+        position: relative;
+        font-size: 10px;
+    }
+
+    
+}
